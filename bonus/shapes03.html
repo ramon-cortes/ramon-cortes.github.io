@@ -8,8 +8,17 @@
     </style>-->
 </head>
 
-<body>
-    <p>Click button to draw circles</p>
+<body>    
+    One of the <b>bonus</b> exercises. 
+    <br>
+    Click button to draw circles. If no parameters are chosen (or if invalid) they will set to the min.    
+    <br>
+    <label for="circlesChosen">Number or circles (4-99)</label>
+    <input type="text" id="circlesChosen" name="circlesChosen">
+    <br>
+    <label for="radius">Radius or size (20-100)</label>
+    <input type="text" id="radius" name="radius">
+    <br>
     <input type='button' onclick='drawCircles()' value='drawCircles'>
     
     <script>
@@ -25,16 +34,36 @@
         }
         function drawCircles() {
             let texto = '';
-            let circulos = 30; //Amount of circles to draw
-            let incr = 75; //Circle radius to place circles
+            //Amount of circles to draw
+            let circulos = Math.abs(parseInt(document.getElementById('circlesChosen').value)); 
+            if (!circulos) {
+                circulos = 4;
+            }
+            if (circulos > 99) {
+                circulos = 99;
+            }
+            if (circulos < 4) {
+                circulos = 4;
+            }
+            //Circle radius to place circles  
+            let incr = Math.abs(parseInt(document.getElementById('radius').value));
+            if (!incr) {
+                incr = 20;
+            }
+            if (incr > 100) {
+                incr = 100;
+            }
+            if (incr < 20) {
+                incr = 20;
+            }
             //texto = convertsToDiv(100, 150);
             //texto += convertsToDiv(150, 150);
             //for (let i = 100; i <= 200; i += 50) {
             //    texto += convertsToDiv(i, 100);
             //}
             for (let alfa = 0; alfa < 360; alfa += (360 / circulos)) {
-                let x = 150 + (incr * Math.cos(degToRad(alfa)));
-                let y = 200 + (incr * Math.sin(degToRad(alfa)));
+                let x = 200 + (incr * Math.cos(degToRad(alfa)));
+                let y = 250 + (incr * Math.sin(degToRad(alfa)));
                 //texto += 'x =' + x + ' y = ' + y + '<br>'; //Testing x and y are working
                 texto += convertsToDiv(x, y);
             }
