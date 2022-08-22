@@ -1,0 +1,12 @@
+#consola {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    left: 0px;
+    top: 380px;
+}
+#notas {
+    font-family: 'FootLight MT Light';
+    position: absolute;
+    left: 0px;
+    top: 400px;
+}
