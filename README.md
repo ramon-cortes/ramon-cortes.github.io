@@ -1,6 +1,6 @@
 ### Ramon Cortes' Portfolio
 
-A repositorie of all my exercises from the Professional Certificate in Coding.
+A repositorie of all my exercises from the *Professional Certificate in Coding*.
 Exercises are listed on the left and organized per week.
 
 #### Installation instructions
@@ -21,7 +21,7 @@ ramoncortes.varios@gmail.com
 #### What's next?
 
 Hopefully I will have a list of exercises using a better looking menu.
-But no plans yet. I still don't know how to organize a website using div tags to split the screen and load an html there. I manage to do it but did not look as good as I wanted.
+But no plans yet. I still don't know how to organize a website using div tags to split the screen and load an html on one side. (I manage to do it but did not look as good as I wanted).
 
 #### Other information
 
