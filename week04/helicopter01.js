@@ -88,7 +88,7 @@ function ciclo(x, y) {
 
 }
 
-intervalId = setInterval(ciclo, 20, x, y);
+intervalId = setInterval(ciclo, 50, x, y);
 
 function inicia(raton) {
   clearInterval(intervalId);
@@ -98,7 +98,7 @@ function inicia(raton) {
   x = raton.clientX; 
   y = raton.clientY; 
   
-  intervalId = setInterval(ciclo, 20, x, y);
+  intervalId = setInterval(ciclo, 50, x, y);
   document.getElementById('consola').innerHTML = 'Go to ('+ (x - 50) + ', ' + (y - 50) + ')';  
 }
 
