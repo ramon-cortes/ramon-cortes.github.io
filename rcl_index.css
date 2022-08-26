@@ -1,0 +1,28 @@
+#fondo {
+  z-index: 0;
+  float: right;
+}
+
+h2 {
+  font-family: "Arial";
+}
+
+div {
+  font-family: "Arial";
+  font-size: 16px;
+}
+
+#div_table {
+  font-size: 14px;
+  text-align: left;
+}
+
+table, th, td {
+  border: 1px solid rgb(125, 125, 125);
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+th {
+  text-align: center;
+}
