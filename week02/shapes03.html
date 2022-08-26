@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shapes Test</title>
+    <!--<style>
+        p {text-align: center;}
+    </style>-->
+</head>
+
+<body>    
+    One of the <b>bonus</b> exercises. 
+    <br>
+    Click button to draw circles. If no parameters are chosen (or if invalid) they will set to the min.    
+    <br>
+    <label for="circlesChosen">Number or circles (4-99)</label>
+    <input type="text" id="circlesChosen" name="circlesChosen">
+    <br>
+    <label for="radius">Radius or size (20-100)</label>
+    <input type="text" id="radius" name="radius">
+    <br>
+    <input type='button' onclick='drawCircles()' value='drawCircles'>
+    
+    <script>
+        //Function degToRad copied from:
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+        function degToRad(degrees) {
+            return degrees * (Math.PI / 180);
+        }
+        
+        function convertsToDiv(x, y) {
+            let circuloEnTexto = `<div style=" z-index: 1; position: absolute; left: ${x}px; top: ${y}px; width: 50px; height: 50px; border-radius: 50%; border-style: solid; border-color: rgb(238, 53, 53); "> </div>`;
+            return circuloEnTexto;
+        }
+        function drawCircles() {
+            let texto = '';
+            //Amount of circles to draw
+            let circulos = Math.abs(parseInt(document.getElementById('circlesChosen').value)); 
+            if (!circulos) {
+                circulos = 4;
+            }
+            if (circulos > 99) {
+                circulos = 99;
+            }
+            if (circulos < 4) {
+                circulos = 4;
+            }
+            //Circle radius to place circles  
+            let incr = Math.abs(parseInt(document.getElementById('radius').value));
+            if (!incr) {
+                incr = 20;
+            }
+            if (incr > 100) {
+                incr = 100;
+            }
+            if (incr < 20) {
+                incr = 20;
+            }
+            //texto = convertsToDiv(100, 150);
+            //texto += convertsToDiv(150, 150);
+            //for (let i = 100; i <= 200; i += 50) {
+            //    texto += convertsToDiv(i, 100);
+            //}
+
+            //window.innerWidth (o algo parecido) para detectar el ancho de la ventana
+            //Podría usar ese valor en lugar de "let x = 200 +..." y reemplazar ese 200
+            for (let alfa = 0; alfa < 360; alfa += (360 / circulos)) {
+                let x = 200 + (incr * Math.cos(degToRad(alfa)));
+                let y = 250 + (incr * Math.sin(degToRad(alfa)));
+                //texto += 'x =' + x + ' y = ' + y + '<br>'; //Testing x and y are working
+                texto += convertsToDiv(x, y);
+            }
+            document.getElementById('output').innerHTML = texto;
+        }
+    </script>
+    <div id="output">
+
+    </div>
+
+    <!--
+    <div
+        style="
+        z-index: 1;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;  
+        border-style: solid;
+        border-color: rgb(238, 53, 53);
+        ">
+    </div>
+    -->
+    
+        <!-- rgb(168, 3, 51)
+            background: 3px solid -->
+</body>
+
+</html>
