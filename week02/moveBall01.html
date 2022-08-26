@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2 Dimension movement test</title>
+    <!--<style>
+        p {text-align: center;}
+    </style>-->
+</head>
+
+<body>
+    
+
+
+  <div id="ball" style="
+    z-index:5;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: rgb(255, 115, 0)"></div>
+
+  <script>
+
+  var velocity = 5; // For both x & y
+  var ball = document.getElementById('ball');
+  let valuesX = [0, 200, true]; // [0]=position, [1]=limit, [2]=direction
+  let valuesY = [0, 150, true];
+
+  // YOUR CODE 
+  // ----------------
+  //Simple left movement
+  /*function moveBallX() {
+    ball.style.left = position + 'px';
+    position += velocity;  
+  }
+  setInterval(moveBallX, 400); //moves left indefinetly*/
+
+  //EDGE DETECTION
+  //It does'nt actually detect the edge of the browser's window
+  //Just sets a limit
+
+  function movePosition(values) {
+    if (values[2]) {
+      if (values[0] < values[1]) {
+        values[0] += velocity;
+      } else {
+        values[2] = false;
+        values[0] -= velocity;
+      }
+    } else {
+      if (values[0] > 0) {
+        values[0] -= velocity;
+      } else {
+        values[2] = true;
+        values[0] += velocity;
+      }
+    }
+    return values;
+  }
+
+  function moveBall() {
+    ball.style.left = valuesX[0] + 'px';
+    ball.style.top = valuesY[0] + 'px';
+    valuesX = movePosition(valuesX);
+    valuesY = movePosition(valuesY);
+    
+    //Just testing. This changes color randomly
+    let red = Math.floor(255 * (Math.random()));
+    let green = Math.floor(255 * (Math.random()));
+    let blue = Math.floor(255 * (Math.random()));
+    ball.style.background = `rgb(${red}, ${green}, ${blue}`;
+  }
+  setInterval(moveBall, 75);
+
+  </script>
+  <p style="
+    position: absolute;
+    top: 190px;">
+    It moves the ball in 2 dimensions
+  <br>
+  and changes color randomly using Math.random()
+  </p>
+  
+</body></html>
