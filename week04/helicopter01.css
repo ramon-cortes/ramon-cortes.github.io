@@ -46,3 +46,9 @@
   position: absolute;
   z-index: 2;
 }
+
+#preload {  
+  position: absolute;
+  left: 200px;
+  top: 510px;
+}
