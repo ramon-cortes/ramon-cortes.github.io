@@ -3,7 +3,7 @@ const fondoCells = [];
 
 //Incrementar dependiendo del tamaño de la tabla (también agregar el id en el CSS)
 //Renglones     ↓
-let renglones = 11 * 2;
+let renglones = 12 * 2;
 
 for (let cellId = 0; cellId < renglones; cellId++) {
   fondoCells.push(document.getElementById('test' + cellId));
