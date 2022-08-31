@@ -3,11 +3,21 @@ body {
 }
 
 #consola {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(255, 60, 0);
 }
 
 table, th, tr, td {
   border: 2px solid rgb(0, 175, 175);
   border-collapse: collapse;
   padding: 2px;
+}
+
+#menu {
+  font-size: smaller;
 }
