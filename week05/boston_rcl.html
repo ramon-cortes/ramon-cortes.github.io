@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./boston_rcl.css">
+  <title>Walk Boston Data</title>
+</head>
+<body>
+  <h3>Hello this is my Walk Boston Data exercise</h3>
+  First download your Boston salaries data by using the curl command
+  we got from one of the videos. This will work in you GitBash
+  <p id="consola">
+    curl -o boston.js https://pollysnips.s3.amazonaws.com/bostonEmployeeSalaries.json
+  </p><p>
+    Another option is to download the file from NextTech directly.
+  </p>
+  <p>
+    <input type='button' onclick='everyOne()' value='List Everyone'>
+    <input type='button' onclick='overOneK()' value='List Over 100K'>
+  </p>
+  <div id="tabla">
+    <table>
+      <tr>
+        <th>#</th>
+        <th>PERSON</th>
+        <th>TITLE</th>
+        <th>SALARY</th>
+      </tr>
+      <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="./boston.js"></script>
+  <script type="text/javascript" src="./boston_rcl.js"></script>
+</body>
+</html>

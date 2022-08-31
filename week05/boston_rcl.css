@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+}
+
+#consola {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, tr, td {
+  border: 2px solid rgb(0, 175, 175);
+  border-collapse: collapse;
+  padding: 2px;
+}
