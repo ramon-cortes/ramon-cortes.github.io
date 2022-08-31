@@ -20,8 +20,8 @@ ramoncortes.varios@gmail.com
 
 #### What's next?
 
-Hopefully I will have a list of exercises using a better looking menu.
-But no plans yet. I still don't know how to organize a website using div tags to split the screen and load an html on one side. (I manage to do it but did not look as good as I wanted).
+List of exercises has color changing when mouseover.
+Testing on making the color change "fading". Almost have it working. But sometimes that *almost* takes a long time. Hope its not the case.
 
 #### Other information
 
