@@ -1,82 +1,56 @@
 const bostonPeople = boston.data;
 const len = boston.data.length;
 
-//Math.abs(parseInt(document.getElementById('circlesChosen').value));
 document.getElementById('consola').innerHTML = 'Consola: ';
 
-function everyOne() {
-  let htmlTabla = `<table><tr><th>#</th><th>PERSON</th><th>TITLE</th><th>SALARY</th></tr>`
-  for (let i = 0; i < len; i++) {
-    let person = bostonPeople[i][8];
-    let position = bostonPeople[i][9];
-    let salary = bostonPeople[i][11];
-  
+//Creates HTML row info
+function renderRows(data, rowAmount) {
+  let htmlTabla = `<table><tr><th>#</th><th>PERSON</th><th>TITLE</th><th>SALARY</th></tr>`;
+
+  for (let i = 0; i < rowAmount; i++) {
     htmlTabla += `<tr>
     <td>${i + 1}</td>
-    <td>${person}</td>
-    <td>${position}</td>
-    <td>${salary}</td>
+    <td>${data[i][8]}</td>
+    <td>${data[i][9]}</td>
+    <td>${data[i][11]}</td>
     </tr>`;
   }
+
   htmlTabla += '</table>';
-  document.getElementById('tabla').innerHTML = htmlTabla;
+  return htmlTabla;
 }
 
-function overSome() {
-  let htmlTabla = `<table><tr><th>#</th><th>PERSON</th><th>TITLE</th><th>SALARY</th></tr>`
+function everyOne() {  
+  document.getElementById('tabla').innerHTML = renderRows(bostonPeople, len);
+}
+
+function overSome() {  
   let over = Math.abs(parseInt(document.getElementById('over').value));
+
   if (over > 200000 || over < 50000) {
     over = 1000000;
   }
 
-  let person = [];
-  let position = [];
-  let salary = [];
-  for (let i = 0; i < len; i++) {    
-    if (bostonPeople[i][11] >= over) {
-      person.push(bostonPeople[i][8]);
-      position.push(bostonPeople[i][9]);
-      salary.push(bostonPeople[i][11]);
-    }
-  }
-  for (let i = 0; i < salary.length; i++) {  
-    htmlTabla += `<tr>
-    <td>${i + 1}</td>
-    <td>${person[i]}</td>
-    <td>${position[i]}</td>
-    <td>${salary[i]}</td>
-    </tr>`;
-  }
-  htmlTabla += '</table>';
-  document.getElementById('tabla').innerHTML = htmlTabla;
+  //.filter is awesome. It works in a single line!
+  let bostonFiltered = bostonPeople.filter((a) => a[11] >= over);    
+  
+  document.getElementById('tabla').innerHTML = renderRows(bostonFiltered, bostonFiltered.length);
   document.getElementById('consola').innerHTML = 'Consola: ' + over;
 }
 
 function topSome() {
-  let htmlTabla = `<table><tr><th>#</th><th>PERSON</th><th>TITLE</th><th>SALARY</th></tr>`
   let top = Math.abs(parseInt(document.getElementById('top').value));
-  if (top < 1000 && top > 1) {
-    let topOrganized = bostonPeople; //Unable to copy without reference to original array
+  
+  if (top > 1 && top <= 1000) {
+    //Clones array to leave original unmodified
+    let topOrganized = JSON.parse(JSON.stringify(bostonPeople));
+    //Descending sort
     topOrganized.sort((a, b) => b[11] - a[11]);
-    for (let i = 0; i < top; i++) {
-      htmlTabla += `<tr>
-      <td>${i + 1}</td>
-      <td>${bostonPeople[i][8]}</td>
-      <td>${bostonPeople[i][9]}</td>
-      <td>${bostonPeople[i][11]}</td>
-      </tr>`;
-    }
-
-
+    document.getElementById('tabla').innerHTML = renderRows(topOrganized, top);
   }
-  //.sort((a, b) => a - b)
 
-  document.getElementById('tabla').innerHTML = htmlTabla;
   document.getElementById('consola').innerHTML = 'Consola: ' + top;
 }
-
-
-
 
 
 /*let htmlTabla = `<table><tr><th>#</th><th>PERSON</th><th>TITLE</th><th>SALARY</th></tr>
