@@ -22,7 +22,7 @@ ramoncortes.varios@gmail.com
 
 List of exercises has color changing when mouseover.
 
-**Now with fading effect**. It was not that complicated once I started understanding *setTimeout clearTimeout* and *addEventListener("mouseover"&"mouseleave"...*
+**Now with fading effect**. It was not that complicated now that I have started understanding *setTimeout clearTimeout* and *addEventListener("mouseover"&"mouseleave"...*
 
 Very happy I made it work.
 
