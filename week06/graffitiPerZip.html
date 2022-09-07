@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./zipCodes.js"></script>
+    <script src="./graffiti_july_2015.js"></script>
+    <script src="./graffiti_chart.js"></script>
+    <title>Graffiti per ZIP graph</title>
+  </head>
+
+
+Solution is just one line of code. Still here's the result <hr>
+<div id="chart_div" style="width: 1024px; height: 1600px;"></div>
+
+<script>
+
+const graffiti = [];
+let matching;
+let obj;
+
+function graffitiReports(zip) {
+  //console.log(chicago.data[0]);
+	matching = chicago.data.filter((report) => report[16] === zip);
+
+	obj = {};
+	obj.zip = zip;
+	obj.reports = matching.length;
+  //console.log(JSON.stringify(obj));
+	graffiti.push(obj);
+}
+
+zipCodes.forEach(graffitiReports);
+//graffitiReports('60659');
+
+// graph graffiti reports data
+window.onload = function(){
+    const dataset = generateDataset(graffiti);	
+    drawChart(dataset);
+};
+
+</script>
+</html>
