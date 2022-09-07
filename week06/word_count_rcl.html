@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./word_count_rcl.css">
+  <title>Counts words</title>
+</head>
+<body>
+  <h3>Word count exercise</h3>
+  <p>Write or paste the text in the field below</p>
+  <p><input type="text" id="input" size="150px"></p>
+  <input type="button" id="button" onclick="countWords()" value="Count Words">
+  <h4 id="result_header">RESULT</h4>
+  <div id="result">
+    <table>
+      <tr>
+        <th>WORD</th>
+        <th>COUNT</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <script src="./word_count_rcl.js"></script>
+</body>
+</html>

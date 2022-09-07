@@ -1,0 +1,13 @@
+body, #button {
+  font-family: 'Comic Sans MS';
+}
+
+#result, #result_header {
+  color: rgb(11, 92, 243);
+}
+
+table, th, td, tr {
+  border: 2px solid rgb(11, 92, 243);
+  border-collapse: collapse;
+  padding: 2px;
+}
