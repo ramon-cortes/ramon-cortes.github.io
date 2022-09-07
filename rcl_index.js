@@ -4,7 +4,7 @@ let id = [];
 
 //Número de Renglones (celdas)
 //                ↓
-const numCeldas = 13;
+const numCeldas = 15;
 let renglones = numCeldas * 2;
 
 for (let cellId = 0; cellId < renglones; cellId++) {
