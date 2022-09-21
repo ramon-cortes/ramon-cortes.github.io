@@ -1,0 +1,25 @@
+<html>
+  <script>
+    window.onload = function () {
+      const h1 = document.getElementById('div1');
+      const body = document.getElementById('body');
+      h1.innerHTML = "Hello World";
+      let time = 101;
+      function countDown() {
+        time -= 1;
+        h1.innerHTML = `Goodbye aliens. Ship leaving in ${time} tics`;
+        if (time === 0) {
+          clearInterval(id);
+          body.style.background = 'red';
+          h1.innerHTML = `Ship gone`;
+        }
+      }
+      let id = setInterval(countDown, 150);
+    };
+  </script>
+  <body id="body">
+    <div>
+      <h1 id="div1"></h1>
+    </div>
+  </body>
+</html>
