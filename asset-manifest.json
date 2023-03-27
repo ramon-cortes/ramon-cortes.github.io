@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.087e6813.css",
-    "main.js": "/static/js/main.b2bd52db.js",
+    "main.css": "/static/css/main.31601a6f.css",
+    "main.js": "/static/js/main.cab5cfb6.js",
     "static/media/RCL02_0-60-slow.gif": "/static/media/RCL02_0-60-slow.611eee1889fe5594175b.gif",
     "static/media/RCL-logo-illuminated.png": "/static/media/RCL-logo-illuminated.04c510498de9685913cf.png",
     "static/media/email-logo-izq.png": "/static/media/email-logo-izq.239c8dbf842c0872dc9a.png",
     "static/media/email-logo-der.png": "/static/media/email-logo-der.7cd468d0adf82408ba53.png",
+    "static/media/linkedin-logo-izq.png": "/static/media/linkedin-logo-izq.b2939f9650ed8e8f9f65.png",
     "static/media/github-logo-izq.png": "/static/media/github-logo-izq.74a0f7280279e6508229.png",
     "static/media/github-logo-der.png": "/static/media/github-logo-der.5f31f61ffa7c5d1ed993.png",
+    "static/media/linkedin-logo-der.png": "/static/media/linkedin-logo-der.4e3ceb3d100efad13b37.png",
     "static/media/javascript-icon.gif": "/static/media/javascript-icon.8bc29f949e5183b809a4.gif",
     "static/media/react-icon.jpg": "/static/media/react-icon.71d1e2c39d7dd309bb88.jpg",
     "index.html": "/index.html",
-    "main.087e6813.css.map": "/static/css/main.087e6813.css.map",
-    "main.b2bd52db.js.map": "/static/js/main.b2bd52db.js.map"
+    "main.31601a6f.css.map": "/static/css/main.31601a6f.css.map",
+    "main.cab5cfb6.js.map": "/static/js/main.cab5cfb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.087e6813.css",
-    "static/js/main.b2bd52db.js"
+    "static/css/main.31601a6f.css",
+    "static/js/main.cab5cfb6.js"
   ]
 }
