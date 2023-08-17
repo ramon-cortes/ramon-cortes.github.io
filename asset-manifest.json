@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.31601a6f.css",
-    "main.js": "/static/js/main.e68108c8.js",
+    "main.js": "/static/js/main.28fbbf3c.js",
     "static/media/RCL02_0-60-slow.gif": "/static/media/RCL02_0-60-slow.611eee1889fe5594175b.gif",
     "static/media/RCL-logo-illuminated.png": "/static/media/RCL-logo-illuminated.04c510498de9685913cf.png",
     "static/media/email-logo-izq.png": "/static/media/email-logo-izq.239c8dbf842c0872dc9a.png",
@@ -14,10 +14,10 @@
     "static/media/react-icon.jpg": "/static/media/react-icon.71d1e2c39d7dd309bb88.jpg",
     "index.html": "/index.html",
     "main.31601a6f.css.map": "/static/css/main.31601a6f.css.map",
-    "main.e68108c8.js.map": "/static/js/main.e68108c8.js.map"
+    "main.28fbbf3c.js.map": "/static/js/main.28fbbf3c.js.map"
   },
   "entrypoints": [
     "static/css/main.31601a6f.css",
-    "static/js/main.e68108c8.js"
+    "static/js/main.28fbbf3c.js"
   ]
 }
