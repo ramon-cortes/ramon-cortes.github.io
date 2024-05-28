@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 
 :root {
   --border-radius: 15px;
@@ -9,12 +10,16 @@
   --colorcombo-medium-h: #ffb476;
   --colorcombo-low: #A6D0DD;
   --colorcombo-low-h: #79c4db;
+  --font-biggest: 1rem;
+  --font-big: 0.92rem;
+  --font-normal: 0.84rem;
+  --font-small: 0.61rem;
 }
 
 body {
   margin: 0px;
-  font-family: 'Jersey 15';
-  font-size: 1.3rem;
+  font-family: 'Nova Round';
+  font-size: var(--font-biggest);
   /* background-image: url('./img/fondo-code.jpg'); */
 }
 
@@ -51,10 +56,6 @@ body {
   color: white;
   text-decoration: none;
   /* transition: color var(--timer-fade); */
-}
-
-.wrapper-menu a:hover {
-  /* text-decoration: none; */
 }
 
 .start, .content, .links {
@@ -94,7 +95,7 @@ body {
   left: calc(50vw - 75px);
   font-family: 'consolas';
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: var(--font-normal);
   color: white;
   z-index: 500;
 }
@@ -165,12 +166,12 @@ hr {
 
 @keyframes wobble {
   0% { transform: rotate(0deg); }
-  2% { transform: rotate(1deg); }
-  4% { transform: rotate(0deg); }
-  6% { transform: rotate(-1deg); }
-  8% { transform: rotate(0deg); }
-  10% { transform: rotate(1deg); }
-  12% { transform: rotate(0deg); }
+  1.5% { transform: rotate(1deg); }
+  3% { transform: rotate(0deg); }
+  4.5% { transform: rotate(-1deg); }
+  6% { transform: rotate(0deg); }
+  7.5% { transform: rotate(1deg); }
+  9% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
 }
 
@@ -187,12 +188,29 @@ hr {
 }
 
 li {
-  font-size: 0.8rem;
+  font-size: var(--font-small);
   list-style: "► ";
 }
 
 li span {
-  font-size: 1.1rem;
+  font-size: var(--font-normal);
+}
+
+@keyframes fadeOut {
+  from { opacity: 1;}
+  to { opacity: 0;}
+}
+
+.skills-div {
+  background-color: var(--colorcombo-low);
+  position: absolute;
+  text-align: center;
+  border-radius: 10px;
+  width: 10vw;
+  /* left: calc(3vw);
+  top: calc(35vh); */
+  z-index: 800;
+  animation: fadeOut 2.5s linear 0s 1 forwards;
 }
 
 @keyframes slideInRight2 {
@@ -209,7 +227,7 @@ li span {
   position: absolute;
   top: calc(60px + 25vw);
   left: 100%;
-  font-size: 1.1rem;
+  font-size: var(--font-normal);
   width: calc(50%);
   padding-top: 7px;
   padding-bottom: 7px;
@@ -265,7 +283,7 @@ li span {
 
 .portfolio-descr {
   background-color: var(--colorcombo-medium);
-  font-size: 1.2rem;
+  font-size: var(--font-big);
   padding-left: 5px;
 }
 
@@ -276,7 +294,7 @@ li span {
 
 .portfolio-contenido {
   background-color: var(--colorcombo-low);
-  font-size: 1.2rem;
+  font-size: var(--font-big);
   padding-left: 5px;
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
@@ -341,7 +359,7 @@ li span {
   animation: slideBRight1 1s ease-in-out 0.25s forwards;
 }
 
-.renglon-3, .renglon-4 {
+.renglon-3, .renglon-4, .renglon-5 {
   opacity: 0;
   scale: 0.1;
   transition: opacity 1s, scale 1s;

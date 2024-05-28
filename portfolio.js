@@ -1,3 +1,30 @@
+export const sk = [
+  {
+    text: 'JavaScript'
+  },
+  {
+    text: 'Bootstrap'
+  },
+  {
+    text: 'React'
+  },
+  {
+    text: 'MongoDB'
+  },
+  {
+    text: 'Heroku'
+  },
+  {
+    text: '3DS Max'
+  },
+  {
+    text: 'Cobol'
+  },
+  {
+    text: 'Express'
+  } 
+];
+
 export const port = [
   {
     title: 'Tetris',
@@ -18,13 +45,14 @@ export const port = [
     img: 'https://www.youtube.com/embed/foiOQnI_Rbk?si=YnKMrBHz5ht34MnI'
   },
   {
-    title: 'Imperial-Metric',
-    description: `Unit converter <br>
-    Some of the most common units I find myself using (UI in Spanish)`,
-    link: 'https://ramon-cortes.github.io/mi-conversor/',
-    repo: 'https://github.com/ramon-cortes/mi-conversor',
-    isImg: true,
-    img: './img/converter.jpg'
+    title: 'Sudoku Solver',
+    description: `Solves "easy" Sudokus <br>
+    I also used Puppeteer so the program programmatically enters a website
+    and solves a Sudoku (looks cool)`,
+    link: 'https://youtu.be/dhrWUcg40vs',
+    repo: 'https://github.com/ramon-cortes/sudoku_puppeteer',
+    isImg: false,
+    img: 'https://www.youtube.com/embed/dhrWUcg40vs?si=GE1KMzVqNFLmBPh_'
   },
   {
     title: `Conway's Game of Life`,
@@ -34,6 +62,15 @@ export const port = [
     repo: 'https://github.com/ramon-cortes/conway',
     isImg: true,
     img: './img/conway.gif'
+  },
+  {
+    title: 'Imperial-Metric',
+    description: `Unit converter <br>
+    Some of the most common units I find myself using (UI in Spanish)`,
+    link: 'https://ramon-cortes.github.io/mi-conversor/',
+    repo: 'https://github.com/ramon-cortes/mi-conversor',
+    isImg: true,
+    img: './img/converter.jpg'
   },
   {
     title: 'CSS Menu',
@@ -53,6 +90,15 @@ export const port = [
     img: './img/boston-data.gif'
   },
   {
+    title: 'Helicopter',
+    description: `Point to move exercise <br>
+    One of my earlier practices`,
+    link: 'https://ramon-cortes.github.io/helicopter/helicopter01.html',
+    repo: 'https://github.com/ramon-cortes/helicopter',
+    isImg: true,
+    img: './img/helicopter.gif'
+  },
+  {
     title: 'Pacmen',
     description: `Random motion across the screen`,
     link: 'https://ramon-cortes.github.io/pacmen',
@@ -61,12 +107,11 @@ export const port = [
     img: './img/pacmen.gif'
   },
   {
-    title: 'Helicopter',
-    description: `Point to move exercise <br>
-    One of my earlier practices`,
-    link: 'https://ramon-cortes.github.io/helicopter/helicopter01.html',
-    repo: 'https://github.com/ramon-cortes/helicopter',
+    title: '-',
+    description: `-`,
+    link: '_blank',
+    repo: '_blank',
     isImg: true,
-    img: './img/helicopter.gif'
+    img: './img/-.gif'
   }
 ];
