@@ -283,7 +283,7 @@ li span {
 
 .portfolio-descr {
   background-color: var(--colorcombo-medium);
-  font-size: var(--font-big);
+  font-size: var(--font-normal);
   padding-left: 5px;
 }
 

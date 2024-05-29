@@ -51,7 +51,8 @@ function changeOpaScale(vh, scrolledPixels) {
 
 // ---Ejecuta cuando se hace "scroll"---
 function scrolling(e) {
-  let consola = document.getElementById('consola');
+          // Consola >
+  //let consola = document.getElementById('consola');
   let scrolledPixels = window.scrollY;
   let url = window.location.hash.split('/')[1];
   let vh = window.innerHeight;
@@ -86,9 +87,10 @@ function scrolling(e) {
   // Tratando de animar un div al estar en el viewport
   changeOpaScale(vh, scrolledPixels);
     
-  consola.innerHTML = `>${scrolledPixels} 
+  // Consola >
+  /*consola.innerHTML = `>${scrolledPixels} 
   <br>
-  ${secondLine} ${url}`;
+  ${secondLine} ${url}`;*/
 }
 // --- Fin animación div al entrar en viewport ---
 

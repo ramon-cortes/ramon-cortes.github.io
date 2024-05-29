@@ -1,28 +1,15 @@
 export const sk = [
-  {
-    text: 'JavaScript'
-  },
-  {
-    text: 'Bootstrap'
-  },
-  {
-    text: 'React'
-  },
-  {
-    text: 'MongoDB'
-  },
-  {
-    text: 'Heroku'
-  },
-  {
-    text: '3DS Max'
-  },
-  {
-    text: 'Cobol'
-  },
-  {
-    text: 'Express'
-  } 
+  { text: 'JavaScript' },
+  { text: 'Bootstrap' },
+  { text: 'React' },
+  { text: 'MongoDB' },
+  { text: 'Heroku' },
+  { text: '3DS Max' },
+  { text: 'Cobol' },
+  { text: 'Express' },
+  { text: 'JCL' },
+  { text: 'DB2 SQL' },
+  { text: 'zOS ISPF' }
 ];
 
 export const port = [
@@ -53,6 +40,15 @@ export const port = [
     repo: 'https://github.com/ramon-cortes/sudoku_puppeteer',
     isImg: false,
     img: 'https://www.youtube.com/embed/dhrWUcg40vs?si=GE1KMzVqNFLmBPh_'
+  },
+  {
+    title: `Factorial in Cobol`,
+    description: `Reads numbers in a file and <br>
+    calculates it's factorial`,
+    link: '_blank',
+    repo: '_blank',
+    isImg: true,
+    img: './img/cobol-f.gif'
   },
   {
     title: `Conway's Game of Life`,
@@ -105,13 +101,5 @@ export const port = [
     repo: 'https://github.com/ramon-cortes/pacmen',
     isImg: true,
     img: './img/pacmen.gif'
-  },
-  {
-    title: '-',
-    description: `-`,
-    link: '_blank',
-    repo: '_blank',
-    isImg: true,
-    img: './img/-.gif'
   }
 ];
