@@ -359,7 +359,7 @@ li span {
   animation: slideBRight1 1s ease-in-out 0.25s forwards;
 }
 
-.renglon-3, .renglon-4, .renglon-5 {
+.renglon-3, .renglon-4, .renglon-5, .renglon-6 {
   opacity: 0;
   scale: 0.1;
   transition: opacity 1s, scale 1s;

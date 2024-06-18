@@ -14,6 +14,15 @@ export const sk = [
 
 export const port = [
   {
+    title: 'Artificial Intelligence Battleship',
+    description: `1 Player BattleShip game in JS <br>
+    Played by a GenAI by its API`,
+    link: '_blank',
+    repo: '_blank',
+    isImg: false,
+    img: 'https://www.youtube.com/embed/C9KqYkHcGRw?si=YFdmaJUUZg60n3iV'
+  },
+  {
     title: 'Tetris',
     description: `Playable and self-solving... <br>
     well, my algorithm tries`,

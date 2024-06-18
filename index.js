@@ -27,7 +27,7 @@ for (let i = 0; i < menuLinks.length; i++) {
 
 //Animación DIVS portfolio subsecuentes (conforme usuario hace "scroll")
 function changeOpaScale(vh, scrolledPixels) {
-  let ajustes = [0.2 * vh, 0.5 * vh, 1.1 * vh];
+  let ajustes = [0.3 * vh, 0.8 * vh, 1.2 * vh, 1.7 * vh];
   //console.log(ajustes);
   for (let r = 3; r < (3 + ajustes.length); r++) {
     let renglonDivs = document.getElementsByClassName(`renglon-${r}`);
@@ -51,7 +51,7 @@ function changeOpaScale(vh, scrolledPixels) {
 
 // ---Ejecuta cuando se hace "scroll"---
 function scrolling(e) {
-          // Consola >
+  // Consola >
   //let consola = document.getElementById('consola');
   let scrolledPixels = window.scrollY;
   let url = window.location.hash.split('/')[1];
